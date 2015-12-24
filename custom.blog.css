@@ -90,15 +90,6 @@
 html.realtime-preview #header,
 html.realtime-preview #blog-nav { display: none; }
 
-/* Plugins
----------- */
-
-.tags a { color: green; }
-.tags.cloud { text-align: center; font-size: 0.9em; border-top: 1px solid #ccc; padding-top: 20px; }
-
-ul.menu-v.categories { padding-left: 10px; border-top: 1px solid #ccc; }
-ul.menu-v.categories li { line-height: 1.2em; font-size: 0.9em; margin: 12px 0 0; }
-ul.menu-v.categories li.selected a { color: #000; text-decoration: none; font-weight: bold; }
 
 
 /* TABLET
