@@ -37,21 +37,3 @@
     {/for}
 </ul>
 {/if}
-
-{if $page eq 1 && !$wa->globals('disable_pageless')}
-<script type="text/javascript">
-$.pageless({
-        auto: true, // auto load next pages
-        url: '?layout=lazyloading',
-        target: '.lazyloading:first',
-        scroll: function(response){
-            var progress = '';
-            if (response) {
-                progress = '<i class="icon16 loading"><'+'/i> <em>[`Loading`]...<'+'/em>';
-            }
-        },
-        count: {$pages},
-        paging_selector:'#stream-paging'
-});
-</script>
-{/if}

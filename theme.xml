@@ -1,21 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE theme PUBLIC "wa-app-theme" "http://www.webasyst.com/wa-content/xml/wa-app-theme.dtd">
-<theme id="marketshop" system="0" vendor="webasyst" author="Webasyst" app="blog" parent_theme_id="site:marketshop" version="1.0.0">
-    <name locale="en_US">marketshop</name>
-    <name locale="ru_RU">marketshop</name>
+<theme id="smart" system="0" vendor="985310" author="wa-plugins.ru" app="blog" parent_theme_id="site:smart" version="1.0.0">
+    <name locale="en_US">Smart</name>
+    <name locale="ru_RU">Умный магазин</name>
     <description locale="ru_RU"/>
     <files>
-        <file path="index.html" custom="0" parent="1">
+        <file path="_css/smart.css" parent="1">
         </file>
-        <file path="custom.css" custom="0" parent="1">
+        <file path="_css/smart.min.css" parent="1">
         </file>
-        <file path="custom.blog.css" custom="0">
+        <file path="_css/head.css" parent="1">
+        </file>
+        <file path="_css/head.min.css" parent="1">
+        </file>
+        <file path="_css/skin2.min.css" parent="1">
+        </file>
+        <file path="_css/skin3.min.css" parent="1">
+        </file>
+        <file path="_css/skin4.min.css" parent="1">
+        </file>
+        <file path="_css/skin5.min.css" parent="1">
+        </file>
+        <file path="_css/skin6.min.css" parent="1">
+        </file>
+        <file path="_css/skin-custom.css" parent="1">
+        </file>
+        <file path="_css/theme-settings.css" parent="1">
+        </file>
+        <file path="_js/smart.js" custom="0" parent="1">
+        </file>
+        <file path="_js/smart.min.js" custom="0" parent="1">
+        </file>
+        <file path="_js/script.min.js" custom="0" parent="1">
+        </file>
+
+        <file path="_css/smart.blog.css" custom="0">
             <description locale="en_US">Core Blog app CSS</description>
             <description locale="ru_RU">Основной CSS приложения «Блог»</description>
+        </file> 
+        <file path="_css/smart.blog.min.css" custom="0">
+            <description locale="en_US">Core Blog app CSS. Compressed</description>
+            <description locale="ru_RU">Основной CSS приложения «Блог». Сжатый</description>
         </file>       
-        <file path="custom.blog.js" custom="0">
+        <file path="_js/smart.blog.js" custom="0">
             <description locale="en_US">JS</description>
             <description locale="ru_RU">JS</description>
+        </file>
+        <file path="_js/smart.blog.min.js" custom="0">
+            <description locale="en_US">JS. Compressed</description>
+            <description locale="ru_RU">JS. Сжатый</description>
         </file>
         <file path="content.html" custom="0">
             <description locale="en_US">Main layout and navigation for the Blog app content</description>
@@ -61,6 +94,9 @@
             <description locale="en_US">Customer account navigation menu</description>
             <description locale="ru_RU">Меню навигации в личном кабинете покупателя</description>
         </file>
+        
+        <file path="index.html" parent="1">
+        </file>
         <file path="my.profile.html" parent="1">
         </file>
         <file path="login.html" parent="1">
@@ -72,51 +108,29 @@
         <file path="error.html" parent="1">
         </file>
     </files>
-  <about locale="en_US">
+    
+    <locales>
+        <locale>
+            <msgid>Categories</msgid>
+            <msgstr locale="ru_RU">Категории</msgstr>
+        </locale>
+    </locales>
+    <about locale="en_US">
 <![CDATA[
-<p><b>CUSTOM</b> is a universal design theme family for all basic Webasyst apps: Site, Blog, Photos, Shop-Script, and others. The parent (main) theme of the family, which includes the basic set of CSS rules and the common layout template index.html, is the CUSTOM theme for the Site application. All CUSTOM design themes used in other applications (e.g., Blog or Photos) utilize common CSS rules and file index.html of the parent (main) theme.</p>
-<p>CUSTOM design themes are optimized for all modern web browsers, including iOS and Android based mobile devices.</p>
+<p><b>MarketShop</b> - is the universal family of design themes for all base application framework WebAsyst: Site, Blog, Photo, Shop-Script.</p>
+<p>Theme MarketShop design optimized for all modern browsers and mobile devices based on iOS and Android.</p>
 
-<h3>.hero</h3>
-<p>The theme offers the .hero class, which is recommended for use for highlighting key content on a page. With this class, content is displayed stretched across the entire visible page width:</p>
-<pre>
-&lt;div <strong>class="hero"</strong>&gt;
-    … Important content; e.g., online store's special offers,
-      blog post, best photo, etc. …
-&lt;/div&gt;
-… Other content here …
-</pre>
-<p>Auxiliary classes .red, .green, .blue, .purple, .yellow, .black allow you to specify the color for a .hero banner, and an extra class .superhero will visually make the banner appear over the edges of the main content area:</p>
-<pre>
-&lt;div <strong>class="hero superhero yellow"</strong>&gt;
-    &lt;h1&gt;This Week's Special Offer!&lt;/h1&gt;
-    &lt;img src="…" /&gt;
-&lt;/div&gt;
-</pre>
+<p>Theme design uses icons font  <a href="http://fontawesome.io/" target="_blank">Font Awesome</a> 4.1.0. 
+<a href="http://fontawesome.io/icons/" target="_blank">Here is a complete</a> list of supported icons that can be used in the subject design</p>
 ]]>
-  </about>
-  <about locale="ru_RU">
+    </about>
+    <about locale="ru_RU">
 <![CDATA[
-<p><b>CUSTOM</b> — это универсальное семейство тем дизайна для всех базовых приложений фреймворка Вебасист: Сайт, Блог, Фото, Shop-Script и других. Родительской (основной) темой семейства, включающей в себя базовый набор CSS-стилей и общий макет дизайна index.html, является тема CUSTOM для приложения «Сайт». Все темы дизайна CUSTOM для других приложений (Блог, Фото и других) используют базовый CSS и index.html из родительской (основной) темы.</p>
-<p>Темы дизайна семейства CUSTOM оптимизированы для всех современных браузеров и мобильных устройств на основе iOS и Android.</p>
+<p><b>MarketShop</b> - это универсальное семейство тем дизайна для всех базовых приложений фреймворка Вебасист: Сайт, Блог, Фото, Shop-Script.</p>
+<p>Тема дизайна MarketShop оптимизированы для всех современных браузеров и мобильных устройств на основе iOS и Android.</p>
 
-<h3>.hero</h3>
-<p>Тема дизайна предоставляет класс .hero, который рекомендуется использовать для выделения ключевого содержимого страницы. Класс визуально оформляет содержимое в виде «растяжки» на всю ширину основной видимой области страницы:</p>
-<pre>
-&lt;div <strong>class="hero"</strong>&gt;
-    … Важное содержимое страницы, например, спецпредложения магазина,
-      ключевой блог-пост, лучшая фотография …
-&lt;/div&gt;
-… Менее важная информация …
-</pre>
-<p>Дополнительные классы .red, .green, .blue, .purple, .yellow, .black позволяют указать цвет баннера .hero, а отдельный дополнительный класс .superhero позволяет выделить баннер более явно так, что его края визуально будут нависать над областью основного содержимого:</p>
-<pre>
-&lt;div <strong>class="hero superhero yellow"</strong>&gt;
-    &lt;h1&gt;Спецпредложение недели!&lt;/h1&gt;
-    &lt;img src="…" /&gt;
-&lt;/div&gt;
-</pre>
-
+<p>Тема дизайна использует иконочный шрифт <a href="http://fontawesome.io/" target="_blank">Font Awesome</a> версии 4.1.0. 
+<a href="http://fontawesome.io/icons/" target="_blank">Тут представлен</a> полный список поддерживаемых иконок, которые можно использовать в теме дизайна</p>
 ]]>
-  </about>
+    </about>
 </theme>

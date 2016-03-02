@@ -60,7 +60,7 @@
 
     {if !empty($frontend_action['category-plugin'].sidebar)}
         <li>
-            <a href="#">[`Information`]</a>
+            <a href="#">[`Categories`]</a>
             {str_replace('menu-v','',$frontend_action['category-plugin'].sidebar)}
         </li>
     {/if}
@@ -90,13 +90,14 @@
 {else}
     {$selected = null}
 {/if}
-{include file="sidebar-menu.html" items=$blog_pages menu_title='Информация' selected=$selected}
+{include file="sidebar.menu.html" items=$blog_pages menu_title="[`Information`]" selected=$selected}
 
 <h3>[`Search`]</h3>
 <div class="list-group">
     <form method="get" action="{$wa_app_url}" class="search">
         <div class="search-wrapper">
-            <input type="search" name="query" {if !empty($blog_query)}value="{$blog_query}"{/if} placeholder="[`Search posts`]">
+            <input class="form-control" type="search" name="query" {if !empty($blog_query)}value="{$blog_query}"{/if} placeholder="[`Search posts`]">
+            <input class="btn btn-primary" type="submit" value="[`Search`]" />
         </div>
     </form>
 </div>
