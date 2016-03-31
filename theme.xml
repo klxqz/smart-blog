@@ -5,48 +5,48 @@
     <name locale="ru_RU">Умный магазин</name>
     <description locale="ru_RU"/>
     <files>
-        <file path="_css/smart.css" parent="1">
+        <file path="!css/smart.css" parent="1">
         </file>
-        <file path="_css/smart.min.css" parent="1">
+        <file path="!css/smart.min.css" parent="1">
         </file>
-        <file path="_css/head.css" parent="1">
+        <file path="!css/head.css" parent="1">
         </file>
-        <file path="_css/head.min.css" parent="1">
+        <file path="!css/head.min.css" parent="1">
         </file>
-        <file path="_css/skin2.min.css" parent="1">
+        <file path="!css/skin2.min.css" parent="1">
         </file>
-        <file path="_css/skin3.min.css" parent="1">
+        <file path="!css/skin3.min.css" parent="1">
         </file>
-        <file path="_css/skin4.min.css" parent="1">
+        <file path="!css/skin4.min.css" parent="1">
         </file>
-        <file path="_css/skin5.min.css" parent="1">
+        <file path="!css/skin5.min.css" parent="1">
         </file>
-        <file path="_css/skin6.min.css" parent="1">
+        <file path="!css/skin6.min.css" parent="1">
         </file>
-        <file path="_css/skin-custom.css" parent="1">
+        <file path="!css/skin-custom.css" parent="1">
         </file>
-        <file path="_css/theme-settings.css" parent="1">
+        <file path="!css/theme-settings.css" parent="1">
         </file>
-        <file path="_js/smart.js" custom="0" parent="1">
+        <file path="!js/smart.js" custom="0" parent="1">
         </file>
-        <file path="_js/smart.min.js" custom="0" parent="1">
+        <file path="!js/smart.min.js" custom="0" parent="1">
         </file>
-        <file path="_js/script.min.js" custom="0" parent="1">
+        <file path="!js/script.min.js" custom="0" parent="1">
         </file>
 
-        <file path="_css/smart.blog.css" custom="0">
+        <file path="!css/smart.blog.css" custom="0">
             <description locale="en_US">Core Blog app CSS</description>
             <description locale="ru_RU">Основной CSS приложения «Блог»</description>
         </file> 
-        <file path="_css/smart.blog.min.css" custom="0">
+        <file path="!css/smart.blog.min.css" custom="0">
             <description locale="en_US">Core Blog app CSS. Compressed</description>
             <description locale="ru_RU">Основной CSS приложения «Блог». Сжатый</description>
         </file>       
-        <file path="_js/smart.blog.js" custom="0">
+        <file path="!js/smart.blog.js" custom="0">
             <description locale="en_US">JS</description>
             <description locale="ru_RU">JS</description>
         </file>
-        <file path="_js/smart.blog.min.js" custom="0">
+        <file path="!js/smart.blog.min.js" custom="0">
             <description locale="en_US">JS. Compressed</description>
             <description locale="ru_RU">JS. Сжатый</description>
         </file>
@@ -108,17 +108,10 @@
         <file path="error.html" parent="1">
         </file>
     </files>
-    
-    <locales>
-        <locale>
-            <msgid>Categories</msgid>
-            <msgstr locale="ru_RU">Категории</msgstr>
-        </locale>
-    </locales>
     <about locale="en_US">
 <![CDATA[
-<p><b>MarketShop</b> - is the universal family of design themes for all base application framework WebAsyst: Site, Blog, Photo, Shop-Script.</p>
-<p>Theme MarketShop design optimized for all modern browsers and mobile devices based on iOS and Android.</p>
+<p><b>Smart</b> - is the universal family of design themes for all base application framework WebAsyst: Site, Blog, Photo, Shop-Script.</p>
+<p>Theme Smart design optimized for all modern browsers and mobile devices based on iOS and Android.</p>
 
 <p>Theme design uses icons font  <a href="http://fontawesome.io/" target="_blank">Font Awesome</a> 4.1.0. 
 <a href="http://fontawesome.io/icons/" target="_blank">Here is a complete</a> list of supported icons that can be used in the subject design</p>
@@ -126,11 +119,17 @@
     </about>
     <about locale="ru_RU">
 <![CDATA[
-<p><b>MarketShop</b> - это универсальное семейство тем дизайна для всех базовых приложений фреймворка Вебасист: Сайт, Блог, Фото, Shop-Script.</p>
-<p>Тема дизайна MarketShop оптимизированы для всех современных браузеров и мобильных устройств на основе iOS и Android.</p>
+<p><b>Smart</b> - это универсальное семейство тем дизайна для всех базовых приложений фреймворка Вебасист: Сайт, Блог, Фото, Shop-Script.</p>
+<p>Тема дизайна Smart оптимизированы для всех современных браузеров и мобильных устройств на основе iOS и Android.</p>
 
 <p>Тема дизайна использует иконочный шрифт <a href="http://fontawesome.io/" target="_blank">Font Awesome</a> версии 4.1.0. 
 <a href="http://fontawesome.io/icons/" target="_blank">Тут представлен</a> полный список поддерживаемых иконок, которые можно использовать в теме дизайна</p>
 ]]>
     </about>
+    <locales>
+        <locale>
+            <msgid>Categories</msgid>
+            <msgstr locale="ru_RU">Категории</msgstr>
+        </locale>
+    </locales>
 </theme>

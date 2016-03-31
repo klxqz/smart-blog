@@ -1,7 +1,6 @@
 {* comment list and a comment posting form *}
-
 <script type="text/javascript">
-$(document).ready(function() {
+var delayed_function = function () {
     var provider_list = $('#user-auth-provider');
     
     provider_list.find('a').click(function () {
@@ -14,10 +13,14 @@ $(document).ready(function() {
             window.open($(this).attr('href'){if !$require_authorization} + "&guest=1"{/if},'oauth', "width=600,height=400,left="+left+",top="+top+",status=no,toolbar=no,menubar=no");
             return false;
         }
-    })
-});
+    });
+};
+{if $theme_settings.jquery_delayed_loading && !waRequest::isXMLHttpRequest()}
+    window.delayJsFunctions.push(delayed_function);
+{else}
+    $(delayed_function());
+{/if}
 </script>
-
 
 <div class="comments" itemscope itemtype="http://schema.org/UserComments">
     <a name="comments"></a>
@@ -133,7 +136,7 @@ $(document).ready(function() {
         </div>
         <div class="comment-submit">
             {if $request_captcha && empty($current_user_id)}
-                {$wa->captcha()}
+                {include file="`$wa_parent_theme_path`/function.hookPrepare.html" content=$wa->captcha()}
             {/if}
             <input type="hidden" name="auth_provider" value="{$current_auth_source|default:blogCommentModel::AUTH_GUEST}">
             <input type="hidden" name="parent" value="0">

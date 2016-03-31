@@ -83,9 +83,3 @@
     {/if}
 {/foreach}
 
-{if !empty($photos_loaded) && blogPhotosBridge::is2xEnabled()}
-    <script src="{$wa_static_url}wa-content/js/jquery-plugins/jquery.retina.min.js"></script>
-    <script>$(function() { "use strict";
-        $.Retina && $('img.retinify').retina();
-    });</script>
-{/if}

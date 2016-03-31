@@ -5,5 +5,7 @@
 
 {* @event (frontend_action_default|frontend_action_post|frontend_action_page|frontend_action_error).%plugin_id%.head *}
 {foreach $frontend_action as $plugin => $output}
-    {if !empty($output.head)}{$output.head}{/if}
+    {if !empty($output.head)}
+        {include file="`$wa_parent_theme_path`/function.hookPrepare.html" content=$output.head}
+    {/if}
 {/foreach}
