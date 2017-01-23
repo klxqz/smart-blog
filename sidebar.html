@@ -70,7 +70,7 @@
 </div>
 
 <script type="text/javascript">
-    var delayed_function = function () {
+    $(function () {
         $('#menu_accordion ul').parents('li').find('>a').after('<span class="down"></span>');
         $('#menu_accordion').cutomAccordion({
             classExpand: 'selected',
@@ -80,12 +80,7 @@
             disableLink: false,
             autoExpand: true
         });
-    };
-    {if $theme_settings.jquery_delayed_loading && !waRequest::isXMLHttpRequest()}
-    window.delayJsFunctions.push(delayed_function);
-    {else}
-    $(delayed_function());
-    {/if}
+    });
 </script>
 {/if}
 

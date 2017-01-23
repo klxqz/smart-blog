@@ -2,7 +2,7 @@
 {* @event (frontend_action_default|frontend_action_post|frontend_action_page|frontend_action_error).%plugin_id%.nav_before *}
 {foreach $frontend_action as $plugin => $output}
     {if !empty($output.nav_before)}
-        {include file="`$wa_parent_theme_path`/function.hookPrepare.html" content=$output.nav_before}
+        {$output.nav_before}
     {/if}
 {/foreach}
 
